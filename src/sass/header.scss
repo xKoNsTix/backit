@@ -1,0 +1,245 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap");
+// .slider{
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  body {
+    background: #eee;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    @media (max-width: 600px) {
+      width: 100vh;
+      position: fixed;
+    }
+  }
+  #carousel .carousel-item.boat {
+    background-image: url("images/1.jpg");
+  }
+  #carousel .carousel-item.sea {
+    background-image: url("images/2.jpg");
+  }
+  #carousel .carousel-item.river {
+    background-image: url("images/3.jpg");
+  }
+  #carousel .carousel-item {
+    height: 100vh;
+    width: 100%;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+  }
+  #carousel .carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+  }
+  #carousel .carousel-item .caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    color: white;
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+  #carousel .caption h2 {
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+  #carousel .caption p {
+    animation-duration: 1s;
+    animation-delay: 2.2s;
+  }
+
+  #carousel .caption a {
+    animation-duration: 1s;
+    animation-delay: 2.4s;
+  }
+  .delicious-btn {
+    display: inline-block;
+    min-width: 160px;
+    height: 60px;
+    color: #fff;
+    border: none;
+    border-left: 3px solid #1c8314;
+    border-radius: 0;
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 58px;
+    font-weight: 600;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-transform: capitalize;
+    background: #40ba37;
+  }
+  .delicious-btn:hover,
+  .delicious-btn:active,
+  .delicious-btn:focus {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #1c8314;
+    border-color: #40ba37;
+  }
+
+  p {
+    font-size: 40px;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.herotext {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  padding-top: 1%;
+
+  p {
+    color: rgb(241, 241, 241);
+    font-size: 25px;
+    @media (max-width: 600px) {
+      font-size: 12px;
+    }
+  }
+  font-family: "Antonio";
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.5s; /* Firefox < 16 */
+  -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+  animation: fadein 1.5s;
+}
+
+.buttonHero {
+  font-family: "Antonio";
+  font-size:30px;
+  position: absolute;
+  left: 20%;
+  top: 65%;
+  border: 10px;
+  color: white;
+  padding: 20px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-color: #ffffff;
+  border: 0px solid rgb(255, 255, 255);
+  background-color: #232323;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 6px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;  font-size:30px;
+
+  @media (max-width: 600px) {
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    top: 80vh;
+    left:0;
+    right:0;
+
+    border-radius: 3px;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 35px;
+  }
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+.buttonHero:hover {
+  background-color: #1b3327;
+  color: #ffffff;
+  transition: 0.85s;
+  text-decoration: none;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

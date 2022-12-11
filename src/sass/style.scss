@@ -1,0 +1,39 @@
+// @import "reset";
+// @import "variables";
+// @import "fonts";
+// @import "base";
+// @import "global";
+// @import "hamburger";
+// @import "mainnav";
+// @import "mainnav-mobile";
+// @import "layout/header";
+// @import "layout/workshop";
+// @import "layout/about";
+// @import "layout/news";
+// @import "layout/footer";
+ @import "header";
+ @import "quote";
+ @import "fonts";
+ @import "footer";
+ @import "burgermenu";
+
+
+
+ html {
+    scroll-behavior: smooth;
+  }
+
+  body{
+    p{
+      font-family: Antonio;
+    }
+    h1{
+      font-family: Cormorant;
+    }
+    h2{
+      font-family: Cormorant;
+    }
+    
+  }
+
+
