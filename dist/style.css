@@ -180,17 +180,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .topSection {
   display: flex;
   flex-direction: column;
-  height: 4%;
+  height: 5vh;
   font-family: "Outfit";
 }
 
 .text {
   display: flex;
   flex-direction: row;
+  vertical-align: center;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 .text .topLeft {
   width: 50%;
-  padding-left: 5%;
+  margin-left: 2%;
 }
 .text .topLeft p {
   color: #200f05;
@@ -198,13 +201,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding-top: auto;
   padding-bottom: auto;
   font-size: 36px;
+  vertical-align: center;
 }
 .text .topRight {
   width: 50%;
   text-align: right;
-  margin-right: 5%;
-  padding-top: auto;
-  padding-bottom: auto;
+  margin-right: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: center;
 }
 .text .topRight a {
   color: #200f05;
@@ -213,6 +218,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding-bottom: auto;
   font-size: 24px;
   vertical-align: middle;
+  margin: 2%;
+  vertical-align: center;
 }
 
 .topLine {
@@ -222,8 +229,64 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .hero {
-  background-color: aqua;
-  height: 90vh;
+  background-image: url("images/heroblur.jpg");
+  background-size: cover;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.hero .leftArea {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  margin-left: 2%;
+  top: 25%;
+  bottom: 50%;
+}
+.hero .leftArea img {
+  height: 65%;
+  vertical-align: middle;
+}
+
+/** @format */
+.greenquote {
+  height: 35vh;
+  background-color: #40bf75;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.greenquote .sake {
+  font-size: 150px;
+  margin-top: 0;
+  top: 0;
+  text-align: top;
+  color: #161819;
+  line-height: 150px;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.greenquote .sake h1 {
+  text-align: top;
+  color: #161819;
+  margin-top: -20px !important;
+  padding-top: 0 !important;
+}
+.greenquote .zeit {
+  font-size: 56px;
+  text-align: center;
+  margin-top: 2vh;
+}
+.greenquote .zeit p {
+  color: white;
+}
+.greenquote .oida {
+  font-size: 48px;
+}
+.greenquote .oida p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
