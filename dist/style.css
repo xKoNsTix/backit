@@ -289,4 +289,44 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   color: white;
 }
 
+/** @format */
+.overviews {
+  display: flex;
+  flex-direction: column;
+}
+.overviews .textcontainer {
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: "Outfit";
+  margin-top: 100px;
+}
+.overviews .textcontainer h2 {
+  font-size: 54px;
+  margin-bottom: 30px;
+}
+.overviews .textcontainer p {
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 500px;
+}
+.overviews .first {
+  display: flex;
+  flex-direction: row;
+  height: 65vh;
+}
+.overviews .first .left {
+  width: 50%;
+  background-color: #DCC2B3;
+}
+.overviews .first .right {
+  max-width: 50%;
+  max-height: 100%;
+}
+.overviews .first .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=style.css.map */

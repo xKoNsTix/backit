@@ -1,46 +1,46 @@
 /** @format */
 
-.greenquote {
-  height: 35vh;
-  background-color: #40bf75;
-  font-family: "Roboto";
+.overviews {
   display: flex;
   flex-direction: column;
-  text-align: center;
 
-  .sake {
-    font-size: 150px;
-    margin-top: 0;
+  .textcontainer{
+    text-align:left;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Outfit";
+    margin-top: 100px;
 
-    top: 0;
-    text-align: top;
-    
-    color: #161819;
-    line-height: 150px;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    h1 {
-      text-align: top;
-      color: #161819;
-      margin-top: -20px !important;
-      padding-top: 0 !important;
+    h2 {
+        font-size: 54px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 500px; 
+    }
+  }
+  .first {
+    display: flex;
+    flex-direction: row;
+    height: 65vh;
+
+
+    .left {
+      width: 50%;
+      background-color: #DCC2B3 ;
       
     }
-  }
 
-  .zeit {
-    font-size: 56px;
-    text-align: center;
-    margin-top: 2vh;
-
-    p {
-      color: white;
-    }
-  }
-  .oida {
-    font-size: 48px;
-    p {
-      color: white;
+    .right {
+      max-width: 50%;
+      max-height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
