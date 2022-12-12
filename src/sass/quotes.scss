@@ -1,0 +1,46 @@
+/** @format */
+
+.greenquote {
+  height: 35vh;
+  background-color: #40bf75;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .sake {
+    font-size: 150px;
+    margin-top: 0;
+
+    top: 0;
+    text-align: top;
+    
+    color: #161819;
+    line-height: 150px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    h1 {
+      text-align: top;
+      color: #161819;
+      margin-top: -20px !important;
+      padding-top: 0 !important;
+      
+    }
+  }
+
+  .zeit {
+    font-size: 56px;
+    text-align: center;
+    margin-top: 2vh;
+
+    p {
+      color: white;
+    }
+  }
+  .oida {
+    font-size: 48px;
+    p {
+      color: white;
+    }
+  }
+}
