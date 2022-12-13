@@ -623,9 +623,79 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   z-index: 101;
 }
 
+/** @format */
 .contact {
-  height: 25vh;
-  background-color: #40BF75;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #40bf75;
+}
+.contact .left {
+  width: 33.33%;
+  height: 100%;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+}
+.contact .left .text {
+  margin: auto;
+  padding: auto;
+  flex-direction: column;
+  margin-left: 8%;
+}
+.contact .left .text a {
+  text-decoration: none;
+  font-family: "Outfit";
+  font-size: 24px;
+  color: #200f05;
+}
+.contact .left .text p {
+  text-decoration: none;
+  font-family: "Outfit";
+  font-size: 24px;
+  color: #200f05;
+}
+.contact .mid {
+  width: 33.33%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  align-items: center;
+}
+.contact .mid img {
+  max-height: 13vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vh;
+}
+.contact .right {
+  width: 33.33%;
+  height: 100%;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.contact .right .text {
+  margin: auto;
+  padding: auto;
+  flex-direction: column;
+  margin-right: 8%;
+}
+.contact .right .text a {
+  text-decoration: none;
+  font-family: "Outfit";
+  font-size: 24px;
+  color: #200f05;
+}
+.contact .right .text p {
+  text-decoration: none;
+  font-family: "Outfit";
+  font-size: 24px;
+  color: #200f05;
 }
 
 /** @format */
@@ -677,7 +747,7 @@ footer .right p {
 footer .right a {
   font-family: Rajdhani;
   font-size: 24px;
-  color: rgb(255, 255, 255);
+  color: #200F05;
   text-decoration: none;
   margin-left: 1%;
   transition: all 0.5s ease-in-out;
