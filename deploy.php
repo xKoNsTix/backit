@@ -28,7 +28,7 @@ set('keep_releases', 3);
 
 
 // Hosts
-host('88.198.150.108')
+host('Lillesand')
         ->set('remote_user','ben')
       
 

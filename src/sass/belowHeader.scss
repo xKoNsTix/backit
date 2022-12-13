@@ -1,12 +1,16 @@
 /** @format */
 
 .greenquote {
-  height: 35vh;
+  height: 50vh;
   background-color: #40bf75;
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media (max-width: 1260px) {
+    height: 55vh;
+  }
 
   .sake {
     font-size: 150px;
@@ -14,7 +18,7 @@
 
     top: 0;
     text-align: top;
-    
+
     color: #161819;
     line-height: 150px;
     margin-top: 0 !important;
@@ -24,14 +28,16 @@
       color: #161819;
       margin-top: -20px !important;
       padding-top: 0 !important;
-      
     }
   }
 
   .zeit {
     font-size: 56px;
     text-align: center;
-    margin-top: 2vh;
+    margin-top: 5vh;
+    @media (max-width: 1260px) {
+      margin-top:8vh;
+    }
 
     p {
       color: white;
