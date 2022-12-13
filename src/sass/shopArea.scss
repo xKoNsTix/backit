@@ -6,6 +6,8 @@
   background-color: #ae8e7c;
   display: flex;
   flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: hidden;
   .midDiv {
     align-items: center;
     width: 50%;
@@ -57,15 +59,32 @@
     width: 33.333%;
     align-items: right;
     position: relative;
-    float:right;
+    float: right;
+    animation: shake 10s;
+    animation-iteration-count: infinite;
+
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(1px, -1px) rotate(+10deg);
+      }
+      50% {
+        transform: translate(1px, -1px) rotate(-10deg);
+      }
+    }
 
     img {
       max-height: 70vh;
+      padding-top:10%;
       z-index: 101;
       position: absolute;
       right: 0;
       margin-right: 0;
-      float:right;
+      float: right;
+      overflow: hidden;
     }
   }
 }

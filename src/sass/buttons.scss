@@ -1,14 +1,13 @@
+/** @format */
 
-.buttonDivApp{
-  align-items:center;
+.buttonDivApp {
+  align-items: center;
 }
 
 .buttonApplication {
   font-family: "Outfit";
-  font-size:36px;
-  font-weight:800;
-
-
+  font-size: 36px;
+  font-weight: 800;
 
   border-radius: 8px;
   color: white;
@@ -20,7 +19,7 @@
   cursor: pointer;
   border-color: #ffffff;
   border: 0px solid rgb(255, 255, 255);
-  background-color: #40BF75;
+  background-color: #40bf75;
   color: white;
   font-size: 25px;
   letter-spacing: 6px;
@@ -28,17 +27,15 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-top:4vh;
-
-
+  margin-top: 4vh;
 
   @media (max-width: 600px) {
     position: absolute;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     top: 80vh;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
 
     border-radius: 3px;
     background-color: #232323;
@@ -61,17 +58,14 @@
   text-decoration: none;
 }
 
-
-.buttonShopArea{
-  align-items:center;
+.buttonShopArea {
+  align-items: center;
 }
 
 .buttonShop {
   font-family: "Outfit";
-  font-size:36px;
-  font-weight:800;
-
-
+  font-size: 36px;
+  font-weight: 800;
 
   border-radius: 8px;
   color: white;
@@ -83,7 +77,7 @@
   cursor: pointer;
   border-color: #ffffff;
   border: 0px solid rgb(255, 255, 255);
-  background-color: #40BF75;
+  background-color: #40bf75;
   color: white;
   font-size: 25px;
   letter-spacing: 6px;
@@ -91,17 +85,26 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-top:4vh;
+  margin-top: 4vh;
+  animation: MoveUpDown 1s linear infinite;
 
-
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
+  }
 
   @media (max-width: 600px) {
     position: absolute;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     top: 80vh;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
 
     border-radius: 3px;
     background-color: #232323;
