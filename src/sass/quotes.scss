@@ -9,19 +9,12 @@
 
     font-family: "Outfit";
 
-    align-items: center;
     align-content: space-around;
     padding-top: auto;
     padding-bottom: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
-    margin-left:100px;
-
-    p{
-        margin-left: -4px;
-    }
-    
   }
 
   h2 {
@@ -42,10 +35,9 @@
   width: 100%;
   vertical-align: center;
   background-color: #dcc2b3;
- 
+
   .left {
     width: 50%;
-    background-color: #dcc2b3;
 
     align-items: center;
     align-content: space-around;
@@ -70,6 +62,7 @@
 }
 
 // SECOND ------------------------------------------------------------
+
 .second {
   display: flex;
   flex-direction: row;
@@ -80,6 +73,7 @@
 
   .right {
     width: 50%;
+    height: 65vh;
 
     align-items: center;
     align-content: space-around;
@@ -89,6 +83,16 @@
     padding-bottom: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    .emoji {
+      position: absolute;
+      bottom: 0;
+      right: 10%;
+      width: 50px;
+      img {
+        width: 70px;
+      }
+    }
   }
 
   .left {
@@ -97,17 +101,59 @@
 
     img {
       width: 100%;
-      height: 65vh;
+      height: 100%;
       object-fit: cover;
     }
   }
 }
 
-.emoji {
-  width: 100px;
-  img {
-    width: 100px;
+.hiring {
+  display: flex;
+  flex-direction: row;
+  height: 65vh;
+  width: 100%;
+  vertical-align: center;
+  background-color: #e8d7ce;
+
+  .right {
+    width: 50%;
+    height: 65vh;
+
+    align-items: center;
+    align-content: space-around;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin: auto;
+    padding-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .emoji {
+      position: absolute;
+      bottom: 0;
+      right: 10%;
+      width: 50px;
+      img {
+        width: 70px;
+      }
+    }
   }
-  position: relative;
-  position: right;
+
+  .left {
+    width: 50%;
+    height: 65vh;
+    background-image: url("images/chalkboard.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    vertical-align: center;
+    img {
+      height: 50%;
+      margin-top:auto;
+      margin-bottom:auto;
+
+      
+    }
+  }
 }
