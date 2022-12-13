@@ -7,8 +7,8 @@ cp ./src/index.html ./dist/
 
 cp -R ./src/images ./dist/
 cp -R ./src/fonts ./dist/fonts
+
 npx esbuild ./src/js/main.js --bundle --outfile=./dist/main.js  --minify
-npx esbuild ./src/js/scroll.js --bundle --outfile=./dist/scroll.js  --minify
 
 #After WP
 # px sass ./src/sass/style.scss ./public/wp-content/themes/aaron/style.css

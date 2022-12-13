@@ -21,6 +21,35 @@ function setInt() {
 setInt();
 
 
+
+
+
+
+
+
+// scroll animations 
+
+
+/** @format */
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+// eyebrows
+
 // Eyebrow switch
 const imgElement = document.getElementById("eyebrow");
 
@@ -42,5 +71,4 @@ setInterval(switchImgSrc, 200 + Math.random() * 500);
 
 // Call the function to start switching images
 switchImages();
-
 
