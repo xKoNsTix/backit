@@ -176,6 +176,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   src: url("../fonts/outfit-v6-latin-900.eot"); /* IE9 Compat Modes */
   src: local(""), url("../fonts/outfit-v6-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/outfit-v6-latin-900.woff2") format("woff2"), url("../fonts/outfit-v6-latin-900.woff") format("woff"), url("../fonts/outfit-v6-latin-900.ttf") format("truetype"), url("../fonts/outfit-v6-latin-900.svg#Outfit") format("svg"); /* Legacy iOS */
 }
+/* rajdhani-regular - latin */
+@font-face {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rajdhani-v15-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/rajdhani-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/rajdhani-v15-latin-regular.woff2") format("woff2"), url("../fonts/rajdhani-v15-latin-regular.woff") format("woff"), url("../fonts/rajdhani-v15-latin-regular.ttf") format("truetype"), url("../fonts/rajdhani-v15-latin-regular.svg#Rajdhani") format("svg"); /* Legacy iOS */
+}
 /** @format */
 .topSection {
   display: flex;
@@ -613,6 +621,85 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .shopArea .imageright img {
   max-height: 70vh;
   z-index: 101;
+}
+
+.contact {
+  height: 25vh;
+  background-color: #40BF75;
+}
+
+/** @format */
+footer {
+  height: 3vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #AE8E7C;
+}
+footer .left {
+  width: 50%;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 1%;
+  font-family: "Outfit";
+}
+@media (max-width: 600px) {
+  footer .left {
+    margin-left: 5%;
+  }
+}
+footer .left p {
+  color: rgb(255, 255, 255);
+  padding-left: 1%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 18px;
+}
+footer .right {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-right: 1%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+footer .right p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding-left: 1%;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  font-family: "Outfit";
+}
+footer .right a {
+  font-family: Rajdhani;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 1%;
+  transition: all 0.5s ease-in-out;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 1%;
+}
+@media (max-width: 600px) {
+  footer .right a {
+    margin-right: 10%;
+    margin: auto;
+    margin-left: 3%;
+    margin-right: 5%;
+  }
+}
+footer .right a a:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  footer .right .spanright {
+    margin-right: 8%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
