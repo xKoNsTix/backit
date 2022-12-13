@@ -499,4 +499,120 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-decoration: none;
 }
 
+.buttonShopArea {
+  align-items: center;
+}
+
+.buttonShop {
+  font-family: "Outfit";
+  font-size: 36px;
+  font-weight: 800;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-color: #ffffff;
+  border: 0px solid rgb(255, 255, 255);
+  background-color: #40BF75;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 6px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 4vh;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+@media (max-width: 600px) {
+  .buttonShop {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 80vh;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 35px;
+  }
+}
+
+.buttonApplication:hover {
+  background-color: #1b3327;
+  color: #ffffff;
+  transition: 0.85s;
+  text-decoration: none;
+}
+
+/** @format */
+.shopArea {
+  height: 70vh;
+  font-family: "Outfit";
+  background-color: #ae8e7c;
+  display: flex;
+  flex-direction: row;
+}
+.shopArea .midDiv {
+  align-items: center;
+  width: 50%;
+  height: 70v;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.shopArea .midDiv .textcontainer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit";
+  align-content: space-around;
+  padding-top: auto;
+  padding-bottom: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shopArea .midDiv .textcontainer h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+.shopArea .midDiv .textcontainer p {
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 475px;
+  color: white;
+  text-align: center;
+  max-width: 450px;
+}
+.shopArea .imageleft {
+  width: 33.333%;
+  align-items: left;
+}
+.shopArea .imageleft img {
+  max-height: 70vh;
+}
+.shopArea .imageright {
+  width: 33.333%;
+}
+.shopArea .imageright img {
+  max-height: 70vh;
+  z-index: 101;
+}
+
 /*# sourceMappingURL=style.css.map */
