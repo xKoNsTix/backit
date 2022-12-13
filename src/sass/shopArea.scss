@@ -33,7 +33,7 @@
 
         font-weight: 500;
         color: white;
-text-align:center;
+        text-align: center;
       }
       p {
         font-size: 24px;
@@ -46,22 +46,26 @@ text-align:center;
     }
   }
   .imageleft {
-    width:33.333%;
+    width: 33.333%;
 
-    align-items:left;
+    align-items: left;
     img {
-      
       max-height: 70vh;
-
     }
   }
   .imageright {
-    width:33.333%;
+    width: 33.333%;
+    align-items: right;
+    position: relative;
+    float:right;
 
     img {
-      
       max-height: 70vh;
       z-index: 101;
+      position: absolute;
+      right: 0;
+      margin-right: 0;
+      float:right;
     }
   }
 }
