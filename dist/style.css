@@ -509,7 +509,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .buttonShopArea {
+  padding-top: 10%;
   align-items: center;
+  animation: hover 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes hover {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
 }
 
 .buttonShop {
@@ -535,20 +549,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-top: 4vh;
-  animation: MoveUpDown 1s linear infinite;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 2s;
-}
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 100px;
-  }
 }
 @media (max-width: 600px) {
   .buttonShop {
