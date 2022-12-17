@@ -20,15 +20,7 @@ function setInt() {
 }
 setInt();
 
-
-
-
-
-
-
-
-// scroll animations 
-
+// scroll animations
 
 /** @format */
 
@@ -43,10 +35,8 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
-
-
 
 // eyebrows
 
@@ -69,6 +59,17 @@ function switchImgSrc() {
 // switch the img src every 500-1500ms
 setInterval(switchImgSrc, 200 + Math.random() * 500);
 
-// Call the function to start switching images
-switchImages();
 
+
+// Burgermenu
+
+$("#toggle").click(function () {
+  $(this).toggleClass("active");
+  $("#overlay").toggleClass("open");
+});
+
+$("#overlay").click(function () {
+  $("#toggle").toggleClass("active")
+$("#overlay").toggleClass("open");
+
+});
