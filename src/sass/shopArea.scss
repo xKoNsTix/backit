@@ -59,7 +59,7 @@
     width: 33.333%;
     align-items: right;
     position: relative;
-    float: right;
+    float: none;
     animation: shake 10s;
     animation-iteration-count: infinite;
 
@@ -78,13 +78,86 @@
 
     img {
       max-height: 70vh;
-      padding-top:10%;
+      padding-top: 10%;
       z-index: 101;
       position: absolute;
       right: 0;
       margin-right: 0;
-      float: right;
+      float: none;
       overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .shopArea {
+    height: 50vh;
+    font-family: "Outfit";
+    background-color: #ae8e7c;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .midDiv {
+      vertical-align: top;
+      width: 50%;
+      height: 70v;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .textcontainer {
+        display: flex;
+        flex-direction: column;
+
+        font-family: "Outfit";
+
+        flex-direction: column;
+        align-items: center;
+        padding-left: 60px;
+        margin-top: -1px;
+        width: 100%;
+
+        h2 {
+          font-size: 25px;
+          margin-bottom: 30px;
+
+          font-weight: 500;
+          color: white;
+          text-align: left;
+        }
+        p {
+          font-size: 12px;
+          line-height: 36px;
+          max-width: 475px;
+          color: white;
+          text-align: left;
+          max-width: 600px;
+          line-height: 24px;
+        }
+      }
+    }
+    .imageleft {
+      width: 0;
+      height: 0;
+      img {
+        height: 0;
+        width: 0;
+        opacity: 0;
+      }
+    }
+    .imageright {
+      align-items: right;
+
+      img {
+        float: right;
+      opacity: 1;
+      position: absolute;
+      width: 33%;
+      animation: none;
+      right: 0;
+      bottom:-10%;
+      margin-right: -100%;
+      }
     }
   }
 }

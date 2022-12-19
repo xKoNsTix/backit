@@ -20,6 +20,7 @@
       flex-direction: column;
       margin-left: 8%;
 
+
       a {
         text-decoration: none;
         font-family: "Outfit";
@@ -77,6 +78,7 @@
         font-family: "Outfit";
         font-size: 24px;
         color: #200f05;
+        width:0;
       }
 
       p {
@@ -87,4 +89,102 @@
       }
     }
   }
+}
+
+
+@media (max-width:900px){
+
+  .contact {
+    height: 50vh;
+    min-height:200px;
+    display: flex;
+    flex-direction: row;
+    background-color: #40bf75;
+  
+    .left {
+      width: 33.33%;
+      height: 100%;
+      vertical-align: center;
+      display: flex;
+      align-items: center;
+  
+      .text {
+        margin: auto;
+        padding: auto;
+        flex-direction: column;
+        margin-left: 8%;
+        z-index:999;
+  
+  
+        a {
+          text-decoration: none;
+          font-family: "Outfit";
+          font-size: 24px;
+          color: #200f05;
+        }
+  
+        p {
+          text-decoration: none;
+          font-family: "Outfit";
+          font-size: 24px;
+          color: #200f05;
+        }
+      }
+    }
+  
+    .mid {
+      width: 33.33%;
+      height: 100%;
+      margin: auto;
+      padding: auto;
+      display:flex;
+      flex-direction: column;
+  
+      vertical-align:center;
+      align-items:center;
+      img {
+        height: 10%;
+  
+        display:flex;
+        flex-direction: column;
+        padding-top:5%;
+        
+  
+        
+      }
+    }
+  
+    .right {
+      width: 33.33%;
+      height: 100%;
+      vertical-align: center;
+      display: flex;
+      align-items: center;
+      text-align:right;
+  
+      .text {
+        margin: auto;
+        padding: auto;
+        flex-direction: column;
+        margin-right: 8%;
+
+  
+        a {
+          text-decoration: none;
+          font-family: "Outfit";
+          font-size: 24px;
+          color: #200f05;
+          width:0;
+        }
+  
+        p {
+          text-decoration: none;
+          font-family: "Outfit";
+          font-size: 24px;
+          color: #200f05;
+        }
+      }
+    }
+  }
+  
 }

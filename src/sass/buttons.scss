@@ -59,23 +59,23 @@
 }
 
 .buttonShopArea {
-  padding-top:10%;
+  padding-top: 10%;
   align-items: center;
   animation: hover 6s;
-    animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 
-    @keyframes hover {
-      0% {
-        transform: translateY(0%)
-      }
-
-      50% {
-        transform: translateY(+10%) ;
-      }
-      50% {
-        transform: translateY(-10%) ;
-      }
+  @keyframes hover {
+    0% {
+      transform: translateY(0%);
     }
+
+    50% {
+      transform: translateY(+10%);
+    }
+    50% {
+      transform: translateY(-10%);
+    }
+  }
 }
 
 .buttonShop {
@@ -102,7 +102,6 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-top: 4vh;
-  
 
   @media (max-width: 600px) {
     position: absolute;
@@ -131,4 +130,57 @@
   color: #ffffff;
   transition: 0.85s;
   text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .buttonDivApp {
+    vertical-align: center;
+
+    align-items: center;
+    align-content: center;
+    height: 100px;
+    .buttonApplication {
+      position: relative;
+      top: 0vh;
+      align-items: center;
+      align-content: center;
+
+      padding: 0;
+      vertical-align: center;
+      padding-left: 43px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      background-color: #40bf75;
+    }
+  }
+  .buttonShopArea {
+    vertical-align: center;
+
+    align-items: center;
+    align-content: center;
+    height: 100px;
+    .buttonShop {
+      position: relative;
+      top: 0vh;
+      align-items: center;
+      align-content: center;
+
+
+      vertical-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 5px;
+      background-color: #40bf75;
+      font-size: 20px;
+      font-weight: 300;
+      
+      a{max-width: 20px;
+        
+      }
+    }
+  }
 }

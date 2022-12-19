@@ -377,6 +377,11 @@
       position: relative;
       background-image: url("images/chalkboard.jpg");
       background-size: cover;
+      .textcontainer {
+        align-items: center;
+        align-content: center;
+        
+      }
 
       h2,
       p {
