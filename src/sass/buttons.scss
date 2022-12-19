@@ -139,6 +139,7 @@
     align-items: center;
     align-content: center;
     height: 100px;
+    margin-bottom:5%;
     .buttonApplication {
       position: relative;
       top: 0vh;
@@ -153,6 +154,7 @@
       padding-bottom: 10px;
       border-radius: 5px;
       background-color: #40bf75;
+      
     }
   }
   .buttonShopArea {
@@ -160,7 +162,8 @@
 
     align-items: center;
     align-content: center;
-    height: 100px;
+    height: 50px;
+    margin-bottom:5%;
     .buttonShop {
       position: relative;
       top: 0vh;
@@ -169,18 +172,13 @@
 
 
       vertical-align: center;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding:10px;
       border-radius: 5px;
       background-color: #40bf75;
       font-size: 20px;
       font-weight: 300;
       
-      a{max-width: 20px;
-        
-      }
+      
     }
   }
 }

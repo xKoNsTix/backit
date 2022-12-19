@@ -1,94 +1,96 @@
 /** @format */
-
-.shopArea {
-  height: 70vh;
-  font-family: "Outfit";
-  background-color: #ae8e7c;
-  display: flex;
-  flex-direction: row;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  .midDiv {
-    align-items: center;
-    width: 50%;
-    height: 70v;
+@media (min-width: 901) {
+  .shopArea {
+    height: 70vh;
+    font-family: "Outfit";
+    background-color: #ae8e7c;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    .textcontainer {
-      display: flex;
-      flex-direction: column;
-
-      font-family: "Outfit";
-
-      align-content: space-around;
-      padding-top: auto;
-      padding-bottom: auto;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .midDiv {
       align-items: center;
+      width: 50%;
+      height: 70v;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      z-index: 999;
+      .textcontainer {
+        display: flex;
+        flex-direction: column;
 
-      h2 {
-        font-size: 50px;
-        margin-bottom: 30px;
+        font-family: "Outfit";
 
-        font-weight: 500;
-        color: white;
-        text-align: center;
-      }
-      p {
-        font-size: 24px;
-        line-height: 36px;
-        max-width: 475px;
-        color: white;
-        text-align: center;
-        max-width: 450px;
-      }
-    }
-  }
-  .imageleft {
-    width: 33.333%;
+        align-content: space-around;
+        padding-top: auto;
+        padding-bottom: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    align-items: left;
-    img {
-      max-height: 70vh;
-    }
-  }
-  .imageright {
-    width: 33.333%;
-    align-items: right;
-    position: relative;
-    float: none;
-    animation: shake 10s;
-    animation-iteration-count: infinite;
+        h2 {
+          font-size: 50px;
+          margin-bottom: 30px;
 
-    @keyframes shake {
-      0% {
-        transform: translate(1px, 1px) rotate(0deg);
-      }
-
-      50% {
-        transform: translate(1px, -1px) rotate(+10deg);
-      }
-      50% {
-        transform: translate(1px, -1px) rotate(-10deg);
+          font-weight: 500;
+          color: white;
+          text-align: center;
+        }
+        p {
+          font-size: 24px;
+          line-height: 36px;
+          max-width: 475px;
+          color: white;
+          text-align: center;
+          max-width: 450px;
+        }
       }
     }
+    .imageleft {
+      width: 33.333%;
 
-    img {
-      max-height: 70vh;
-      padding-top: 10%;
-      z-index: 101;
-      position: absolute;
-      right: 0;
-      margin-right: 0;
+      align-items: left;
+      img {
+        max-height: 70vh;
+      }
+    }
+    .imageright {
+      width: 33.333%;
+      align-items: right;
+      position: relative;
       float: none;
-      overflow: hidden;
+      animation: shake 10s;
+      animation-iteration-count: infinite;
+      z-index: 998;
+
+      @keyframes shake {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        50% {
+          transform: translate(1px, -1px) rotate(+10deg);
+        }
+        50% {
+          transform: translate(1px, -1px) rotate(-10deg);
+        }
+      }
+
+      img {
+        max-height: 70vh;
+        padding-top: 10%;
+        z-index: 101;
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        float: none;
+        overflow: hidden;
+      }
     }
   }
 }
-
 @media (max-width: 900px) {
   .shopArea {
     height: 50vh;
@@ -98,13 +100,16 @@
     flex-direction: row;
     overflow-x: hidden;
     overflow-y: hidden;
+    position:relative;
     .midDiv {
       vertical-align: top;
       width: 50%;
       height: 70v;
       display: flex;
       flex-direction: column;
-      text-align: center;
+      text-align: left;
+      margin-left: 1%;
+      z-index:999;
       .textcontainer {
         display: flex;
         flex-direction: column;
@@ -133,6 +138,7 @@
           text-align: left;
           max-width: 600px;
           line-height: 24px;
+          margin-bottom: 2%;
         }
       }
     }
@@ -146,17 +152,19 @@
       }
     }
     .imageright {
-      align-items: right;
-
+      
       img {
         float: right;
-      opacity: 1;
-      position: absolute;
-      width: 33%;
-      animation: none;
-      right: 0;
-      bottom:-10%;
-      margin-right: -100%;
+        opacity: 1;
+        position:absolute;
+        width: 40vw;
+        animation: none;
+        right: -10%;
+      bottom:- 5%;
+
+
+        z-index:998;
+        
       }
     }
   }

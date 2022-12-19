@@ -877,6 +877,7 @@ body {
     align-items: center;
     align-content: center;
     height: 100px;
+    margin-bottom: 5%;
   }
   .buttonDivApp .buttonApplication {
     position: relative;
@@ -896,7 +897,8 @@ body {
     vertical-align: center;
     align-items: center;
     align-content: center;
-    height: 100px;
+    height: 50px;
+    margin-bottom: 5%;
   }
   .buttonShopArea .buttonShop {
     position: relative;
@@ -904,101 +906,98 @@ body {
     align-items: center;
     align-content: center;
     vertical-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px;
     border-radius: 5px;
     background-color: #40bf75;
     font-size: 20px;
     font-weight: 300;
   }
-  .buttonShopArea .buttonShop a {
-    max-width: 20px;
-  }
 }
 /** @format */
-.shopArea {
-  height: 70vh;
-  font-family: "Outfit";
-  background-color: #ae8e7c;
-  display: flex;
-  flex-direction: row;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.shopArea .midDiv {
-  align-items: center;
-  width: 50%;
-  height: 70v;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.shopArea .midDiv .textcontainer {
-  display: flex;
-  flex-direction: column;
-  font-family: "Outfit";
-  align-content: space-around;
-  padding-top: auto;
-  padding-bottom: auto;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.shopArea .midDiv .textcontainer h2 {
-  font-size: 50px;
-  margin-bottom: 30px;
-  font-weight: 500;
-  color: white;
-  text-align: center;
-}
-.shopArea .midDiv .textcontainer p {
-  font-size: 24px;
-  line-height: 36px;
-  max-width: 475px;
-  color: white;
-  text-align: center;
-  max-width: 450px;
-}
-.shopArea .imageleft {
-  width: 33.333%;
-  align-items: left;
-}
-.shopArea .imageleft img {
-  max-height: 70vh;
-}
-.shopArea .imageright {
-  width: 33.333%;
-  align-items: right;
-  position: relative;
-  float: none;
-  animation: shake 10s;
-  animation-iteration-count: infinite;
-}
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
+@media (min-width: 901) {
+  .shopArea {
+    height: 70vh;
+    font-family: "Outfit";
+    background-color: #ae8e7c;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
-  50% {
-    transform: translate(1px, -1px) rotate(10deg);
+  .shopArea .midDiv {
+    align-items: center;
+    width: 50%;
+    height: 70v;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 999;
   }
-  50% {
-    transform: translate(1px, -1px) rotate(-10deg);
+  .shopArea .midDiv .textcontainer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Outfit";
+    align-content: space-around;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shopArea .midDiv .textcontainer h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+  }
+  .shopArea .midDiv .textcontainer p {
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 475px;
+    color: white;
+    text-align: center;
+    max-width: 450px;
+  }
+  .shopArea .imageleft {
+    width: 33.333%;
+    align-items: left;
+  }
+  .shopArea .imageleft img {
+    max-height: 70vh;
+  }
+  .shopArea .imageright {
+    width: 33.333%;
+    align-items: right;
+    position: relative;
+    float: none;
+    animation: shake 10s;
+    animation-iteration-count: infinite;
+    z-index: 998;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    50% {
+      transform: translate(1px, -1px) rotate(10deg);
+    }
+    50% {
+      transform: translate(1px, -1px) rotate(-10deg);
+    }
+  }
+  .shopArea .imageright img {
+    max-height: 70vh;
+    padding-top: 10%;
+    z-index: 101;
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+    float: none;
+    overflow: hidden;
   }
 }
-.shopArea .imageright img {
-  max-height: 70vh;
-  padding-top: 10%;
-  z-index: 101;
-  position: absolute;
-  right: 0;
-  margin-right: 0;
-  float: none;
-  overflow: hidden;
-}
-
 @media (max-width: 900px) {
   .shopArea {
     height: 50vh;
@@ -1008,6 +1007,7 @@ body {
     flex-direction: row;
     overflow-x: hidden;
     overflow-y: hidden;
+    position: relative;
   }
   .shopArea .midDiv {
     vertical-align: top;
@@ -1015,7 +1015,9 @@ body {
     height: 70v;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    margin-left: 1%;
+    z-index: 999;
   }
   .shopArea .midDiv .textcontainer {
     display: flex;
@@ -1042,6 +1044,7 @@ body {
     text-align: left;
     max-width: 600px;
     line-height: 24px;
+    margin-bottom: 2%;
   }
   .shopArea .imageleft {
     width: 0;
@@ -1052,18 +1055,15 @@ body {
     width: 0;
     opacity: 0;
   }
-  .shopArea .imageright {
-    align-items: right;
-  }
   .shopArea .imageright img {
     float: right;
     opacity: 1;
     position: absolute;
-    width: 33%;
+    width: 40vw;
     animation: none;
-    right: 0;
-    bottom: -10%;
-    margin-right: -100%;
+    right: -10%;
+    bottom: -5%;
+    z-index: 998;
   }
 }
 /** @format */
