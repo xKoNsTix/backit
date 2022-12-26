@@ -48,7 +48,7 @@
       }
     }
   }
-  
+
   .imageright {
     width: 33.333%;
     align-items: right;
@@ -57,7 +57,7 @@
     animation: shake 10s;
     animation-iteration-count: infinite;
     z-index: 998;
-    img{
+    img {
       padding-top: 100px;
     }
 
@@ -80,17 +80,15 @@
     z-index: 101;
     position: absolute;
 
-
     float: none;
     overflow: hidden;
   }
   .imageleft {
     width: 33.333%;
-    margin-left:0;
+    margin-left: 0;
 
     img {
       max-height: 70vh;
-
     }
   }
 }
@@ -164,8 +162,10 @@
         animation: none;
         left: 20%;
         bottom: -5%;
-
         z-index: 998;
+        @keyframes shake {
+          
+        }
       }
     }
   }
