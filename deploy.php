@@ -54,7 +54,10 @@ task('deploy', [
      'deploy:publish'
 ]);
 
-
+task('delete_src_folder', function () {
+        run('rm -rf {{release_path}}/src');
+    });
 
 // [Optional] If deploy fails automatically unlock.
+after('deploy', 'delete_src_folder');
 after('deploy:failed', 'deploy:unlock');
