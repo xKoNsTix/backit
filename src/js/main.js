@@ -73,3 +73,6 @@ $("#overlay").click(function () {
 $("#overlay").toggleClass("open");
 
 });
+
+
+history.scrollRestoration = "manual";

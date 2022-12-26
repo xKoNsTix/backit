@@ -1066,7 +1066,6 @@ body {
   }
   @keyframes shake {}
 }
-/** @format */
 .contact {
   height: 20vh;
   min-height: 200px;
@@ -1076,26 +1075,30 @@ body {
 }
 .contact .left {
   width: 33.33%;
-  height: 20vh;
+  height: 100%;
+  vertical-align: center;
   display: flex;
   align-items: center;
 }
-.contact .left .text {
+.contact .left .contactText {
+  margin: auto;
+  padding: auto;
   flex-direction: column;
   margin-left: 8%;
-  margin-top: 0;
 }
-.contact .left .text a {
+.contact .left .contactText a {
   text-decoration: none;
   font-family: "Outfit";
   font-size: 24px;
   color: #200f05;
 }
-.contact .left .text p {
+.contact .left .contactText p {
   text-decoration: none;
   font-family: "Outfit";
   font-size: 24px;
   color: #200f05;
+  margin: 0;
+  padding: 0;
 }
 .contact .mid {
   width: 33.33%;
@@ -1121,23 +1124,26 @@ body {
   align-items: center;
   text-align: right;
 }
-.contact .right .text {
+.contact .right .contactText {
   margin: auto;
   padding: auto;
   flex-direction: column;
   margin-right: 8%;
 }
-.contact .right .text a {
+.contact .right .contactText a {
   text-decoration: none;
   font-family: "Outfit";
   font-size: 24px;
   color: #200f05;
+  width: 0;
 }
-.contact .right .text p {
+.contact .right .contactText p {
   text-decoration: none;
   font-family: "Outfit";
   font-size: 24px;
   color: #200f05;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 900px) {
@@ -1149,30 +1155,32 @@ body {
     background-color: #40bf75;
   }
   .contact .left {
-    width: 35%;
-    height: 100%;
-    vertical-align: center;
+    width: 40%;
+    height: 35vh;
     display: flex;
     align-items: center;
   }
-  .contact .left .text {
-    margin: auto;
-    padding: auto;
+  .contact .left .contactText {
     flex-direction: column;
     margin-left: 8%;
-    z-index: 999;
+    margin-top: 0;
+    line-height: 4vh;
+    margin-right: 2%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
-  .contact .left .text a {
+  .contact .left .contactText a {
     text-decoration: none;
     font-family: "Outfit";
-    font-size: 24px;
+    font-size: 16px;
     color: #200f05;
   }
-  .contact .left .text p {
+  .contact .left .contactText p {
     text-decoration: none;
     font-family: "Outfit";
-    font-size: 24px;
+    font-size: 16px;
     color: #200f05;
+    margin-bottom: 0;
   }
   .contact .mid {
     width: 60%;
@@ -1181,42 +1189,40 @@ body {
     padding: auto;
     display: flex;
     flex-direction: column;
-    position: relative;
     vertical-align: center;
-    align-items: left;
+    align-items: center;
   }
   .contact .mid img {
-    height: 40%;
-    padding-top: 5%;
-    right: 30px;
-    padding-top: auto;
-    padding-bottom: auto;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30%;
   }
   .contact .right {
-    width: 33.33%;
-    height: 100%;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
     vertical-align: center;
     display: flex;
     align-items: center;
     text-align: right;
   }
-  .contact .right .text {
+  .contact .right .contactText {
     margin: auto;
     padding: auto;
     flex-direction: column;
     margin-right: 8%;
   }
-  .contact .right .text a {
+  .contact .right .contactText a {
     text-decoration: none;
     font-family: "Outfit";
-    font-size: 24px;
+    font-size: 16px;
     color: #200f05;
-    width: 0;
   }
-  .contact .right .text p {
+  .contact .right .contactText p {
     text-decoration: none;
     font-family: "Outfit";
-    font-size: 24px;
+    font-size: 16px;
     color: #200f05;
   }
 }
