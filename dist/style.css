@@ -1076,16 +1076,14 @@ body {
 }
 .contact .left {
   width: 33.33%;
-  height: 100%;
-  vertical-align: center;
+  height: 20vh;
   display: flex;
   align-items: center;
 }
 .contact .left .text {
-  margin: auto;
-  padding: auto;
   flex-direction: column;
   margin-left: 8%;
+  margin-top: 0;
 }
 .contact .left .text a {
   text-decoration: none;
@@ -1134,7 +1132,6 @@ body {
   font-family: "Outfit";
   font-size: 24px;
   color: #200f05;
-  width: 0;
 }
 .contact .right .text p {
   text-decoration: none;
@@ -1145,14 +1142,14 @@ body {
 
 @media (max-width: 900px) {
   .contact {
-    height: 50vh;
+    height: 35vh;
     min-height: 200px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     background-color: #40bf75;
   }
   .contact .left {
-    width: 33.33%;
+    width: 35%;
     height: 100%;
     vertical-align: center;
     display: flex;
@@ -1178,20 +1175,22 @@ body {
     color: #200f05;
   }
   .contact .mid {
-    width: 33.33%;
+    width: 60%;
     height: 100%;
     margin: auto;
     padding: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
     vertical-align: center;
-    align-items: center;
+    align-items: left;
   }
   .contact .mid img {
-    height: 10%;
-    display: flex;
-    flex-direction: column;
+    height: 40%;
     padding-top: 5%;
+    right: 30px;
+    padding-top: auto;
+    padding-bottom: auto;
   }
   .contact .right {
     width: 33.33%;
