@@ -1231,7 +1231,7 @@ footer {
   height: 2.5vh;
   display: flex;
   flex-direction: row;
-  background-color: #AE8E7C;
+  background-color: #ae8e7c;
   min-height: 25px;
 }
 footer .left {
@@ -1276,7 +1276,7 @@ footer .right p {
 footer .right a {
   font-family: Rajdhani;
   font-size: 18px;
-  color: #200F05;
+  color: #200f05;
   text-decoration: none;
   margin-left: 1%;
   transition: all 0.5s ease-in-out;
@@ -1301,6 +1301,16 @@ footer .right a a:hover {
   }
 }
 
+@media (max-width: 900px) {
+  footer {
+    height: 6vh;
+  }
+  footer .right {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 3%;
+  }
+}
 /** @format */
 .menu {
   z-index: 10000;
