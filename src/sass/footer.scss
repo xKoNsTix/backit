@@ -49,7 +49,7 @@ footer {
       font-family: "Outfit";
     }
     a {
-      font-family: Rajdhani;
+      font-family: "Rajdhani";
       font-size: 18px;
       color: #200f05;
       text-decoration: none;
@@ -70,9 +70,12 @@ footer {
       }
     }
     .spanright {
-      @media (max-width: 600px) {
-        margin-right: 8%;
+      a {
+        font-family: "Rajdhani";
       }
+    }
+    @media (max-width: 600px) {
+      margin-right: 8%;
     }
   }
 }

@@ -1274,7 +1274,7 @@ footer .right p {
   font-family: "Outfit";
 }
 footer .right a {
-  font-family: Rajdhani;
+  font-family: "Rajdhani";
   font-size: 18px;
   color: #200f05;
   text-decoration: none;
@@ -1295,8 +1295,11 @@ footer .right a {
 footer .right a a:hover {
   transform: scale(1.1);
 }
+footer .right .spanright a {
+  font-family: "Rajdhani";
+}
 @media (max-width: 600px) {
-  footer .right .spanright {
+  footer .right {
     margin-right: 8%;
   }
 }
