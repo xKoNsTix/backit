@@ -1,6 +1,6 @@
 /** @format */
 
-.shopArea {
+#shopArea {
   height: 70vh;
   font-family: "Outfit";
   background-color: #ae8e7c;
@@ -94,7 +94,7 @@
 }
 
 @media (max-width: 900px) {
-  .shopArea {
+  #shopArea {
     height: 50vh;
     font-family: "Outfit";
     background-color: #ae8e7c;

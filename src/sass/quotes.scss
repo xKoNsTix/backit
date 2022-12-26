@@ -36,7 +36,7 @@
   }
 }
 .first,
-.workshop {
+#workshop {
   display: flex;
   flex-direction: row;
   height: 65vh;
@@ -115,7 +115,7 @@
   }
 }
 
-.hiring {
+#hiring {
   display: flex;
   flex-direction: row;
   height: 65vh;
@@ -303,7 +303,7 @@
     flex-direction: column;
   }
 
-  .workshop {
+  #workshop {
     display: flex;
 
     height: 50vh;
@@ -354,7 +354,7 @@
 
 //mediaquery hiring
 @media (max-width: 900px) {
-  .hiring {
+  #hiring {
     display: flex;
     flex-direction: row;
     height: 50vh;
