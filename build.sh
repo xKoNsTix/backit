@@ -3,6 +3,7 @@
 #!/bin/sh
 npx sass ./src/sass/style.scss ./dist/style.css
 cp ./src/index.html ./dist/
+cp ./src/about.html ./dist/
 
 
 cp -R ./src/images ./dist/

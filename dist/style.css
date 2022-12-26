@@ -1737,6 +1737,81 @@ footer .right .spanright a {
   }
 }
 
+/** @format */
+.aboutMain {
+  background-color: #ae8e7c;
+  display: flex;
+  flex-direction: row;
+  height: 96vh;
+}
+.aboutMain .imageDiv {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  transition: all 0.5s;
+}
+.aboutMain .imageDiv .image-1 {
+  max-height: 85vh;
+  position: absolute;
+  bottom: 0;
+  margin-left: 0;
+  margin-left: 100px;
+  z-index: 998;
+}
+.aboutMain .imageDiv .image-2 {
+  max-height: 85vh;
+  position: absolute;
+  bottom: 0;
+  margin-left: 0;
+  margin-left: 100px;
+  z-index: 998;
+}
+.aboutMain .image-1 {
+  display: block;
+  opacity: 1; /* Set the initial opacity of the first image */
+}
+.aboutMain .image-2 {
+  display: none;
+  opacity: 0; /* Set the initial opacity of the second image */
+}
+.aboutMain .imageDiv:hover .image-1 {
+  opacity: 0; /* Fade out the first image on hover */
+}
+.aboutMain .imageDiv:hover .image-2 {
+  display: block;
+  opacity: 1; /* Fade in the second image on hover */
+}
+.aboutMain .txt {
+  width: 50%;
+  height: 100%;
+  font-family: "Outfit";
+  align-items: center;
+  vertical-align: center;
+  margin-bottom: auto;
+  margin-top: auto;
+  display: flex;
+  z-index: 999;
+}
+.aboutMain .txt .container {
+  width: 70%;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: center;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.aboutMain .txt h1 {
+  color: white;
+  font-size: 56px;
+  font-weight: 300;
+}
+.aboutMain .txt p {
+  margin-top: 10%;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 body {
   overflow-x: hidden;
 }
