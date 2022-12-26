@@ -1742,7 +1742,7 @@ footer .right .spanright a {
   background-color: #ae8e7c;
   display: flex;
   flex-direction: row;
-  height: 200vh;
+  height: 100vh;
 }
 .aboutMain .imageDiv {
   width: 50%;
@@ -1784,7 +1784,7 @@ footer .right .spanright a {
   opacity: 1; /* Fade in the second image on hover */
 }
 .aboutMain .txt {
-  width: 100%;
+  width: 50%;
   height: 100%;
   font-family: "Outfit";
   align-items: center;
@@ -1815,24 +1815,30 @@ footer .right .spanright a {
 }
 
 @media (max-width: 900px) {
+  body {
+    background-color: #ae8e7c;
+  }
   .aboutMain {
     display: flex;
     flex-direction: column-reverse;
   }
   .aboutMain .txt {
     width: 100%;
+    background-color: #ae8e7c;
+    margin-top: 5vh;
+  }
+  .aboutMain .txt .container {
+    margin-top: 0;
+    width: 100%;
     margin-left: 10%;
     margin-right: 10%;
-    height: 100vh;
   }
   .aboutMain .imageDiv {
     width: 100%;
     height: 100vh;
-    position: relative;
-    transition: all 0.5s;
   }
   .aboutMain .imageDiv .image-1 {
-    max-height: 40vh;
+    max-height: 20vh;
     position: absolute;
     bottom: 0;
     margin-left: 0;
